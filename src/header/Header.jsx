@@ -5,13 +5,18 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <Container>
-      <Navbar expand="lg" variant="light" bg="light">
-        <Container>
-          <Navbar.Brand onClick={() => navigate("/")}>멋사 Shop</Navbar.Brand>
-        </Container>
-      </Navbar>
-    </Container>
+    <Navbar>
+      <Container>
+        <Navbar.Brand onClck={() => navigate("/")}>멋사 shop</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as:{" "}
+            <a href="https://github.com/seoyeon-jung">seoyeon-jung</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
