@@ -1,0 +1,10 @@
+.main-bg{
+  width: 80%;
+  background-image:url('./img/banner.jpg');
+  margin: auto;
+  margin-top: 10vh;
+  display: block;
+  text-align: center;
+  padding: 20vh;
+  background-position: center;
+}
