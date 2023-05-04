@@ -9,3 +9,8 @@
   margin: auto;
   margin-top: 20px;
 }
+
+.album-title {
+  font-weight: 700;
+  font-size: 20px;
+}
