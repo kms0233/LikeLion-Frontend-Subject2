@@ -1,0 +1,7 @@
+.albums {
+  max-width: 80%;
+}
+.album-title {
+  font-size: 25px;
+  font-weight: 600;
+}
