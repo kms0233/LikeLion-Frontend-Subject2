@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import Header from "../header/Header";
 import Main from "../pages/Main";
+import Header from "../Header/Header";
+import Albums from "../pages/Albums";
 
 const Router = () => {
   return (
@@ -9,6 +10,7 @@ const Router = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/albums" element={<Albums />} />
       </Routes>
       <Footer />
     </BrowserRouter>
