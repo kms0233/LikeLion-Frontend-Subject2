@@ -3,3 +3,12 @@
 	width: 100%;
 	padding-top: 5%;
 }
+
+.albumImgs {
+	width : 80%;
+}
+
+.albumCaption {
+	font-size: 80%;
+	margin-top: -2%;
+}
