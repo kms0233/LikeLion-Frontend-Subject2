@@ -1,0 +1,36 @@
+.main-bg {
+  background-image: url(./img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  padding: 10vh;
+  display: block;
+  height: 100vh;
+}
+.badge {
+  background-image: url(./img/badge.webp);
+width: 100vw;
+  padding:10vh;
+  border-radius: 10PX;
+
+
+}
+.logo {
+  background-image: url(./img/logo1.png);
+  display: block;
+  padding: 5vh;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nav {
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  position: fixed;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
