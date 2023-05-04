@@ -1,0 +1,7 @@
+.main-bg{
+  background-image : url('./img/banner.jpg');
+  padding: 30vh;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
