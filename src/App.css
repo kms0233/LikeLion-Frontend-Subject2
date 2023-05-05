@@ -9,11 +9,35 @@
   display: block;
   height: 100vh;
 }
-.badge {
-  background-image: url(./img/badge.webp);
-width: 100vw;
-  padding:10vh;
-  border-radius: 10PX;
+a {
+
+}
+.movie1 {
+  background-image: url(./img/movie1.webp);
+  padding: 10px;
+}
+.movie_title {
+  background-color:#f6f5f0;
+  width: auto;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 5px;
+
+}
+.movie_text {
+
+  margin-top:5px;
+ text-size-adjust: auto;
+}
+.movie2 {
+  background-image: url(./img/movie2.jpg);
+  padding: 10px;
+
+
+}
+.movie3 {
+  background-image: url(./img/movie3.jpg);
+  padding: 10px;
 
 
 }

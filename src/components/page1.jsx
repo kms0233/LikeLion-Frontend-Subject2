@@ -12,9 +12,13 @@ export default function Page1() {
     <Navbar bg="light" expand="lg">
       <Logo />
       <Container>
-        <Navbar.Brand href="#home">멋사 Shop</Navbar.Brand>
+        <Navbar.Brand href="/" >멋사 Shop</Navbar.Brand>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/Albums">Albums</Nav.Link>
        
-       
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
