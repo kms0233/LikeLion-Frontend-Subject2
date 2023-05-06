@@ -1,0 +1,7 @@
+.main-bg {
+  content: url("../img/banner.jpg");
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 5vh;
+}
