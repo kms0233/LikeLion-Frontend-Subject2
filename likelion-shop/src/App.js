@@ -7,13 +7,29 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
       <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="contentWrapper">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </BrowserRouter>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+      </div>
       <Footer />
     </div>
   );
