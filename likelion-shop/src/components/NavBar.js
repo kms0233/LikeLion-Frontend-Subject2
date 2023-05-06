@@ -4,7 +4,7 @@ import { Container, Navbar } from "react-bootstrap";
 
 function NavBar() {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar>
       <Container>
         <Navbar.Brand href="#home">멋사 shop</Navbar.Brand>
       </Container>
