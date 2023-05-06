@@ -15,20 +15,6 @@ function App() {
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </BrowserRouter>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
-        <li>리스트</li>
       </div>
       <Footer />
     </div>
