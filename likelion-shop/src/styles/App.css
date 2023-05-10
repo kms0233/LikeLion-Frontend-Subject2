@@ -1,0 +1,29 @@
+.main-bg {
+  content: url("../img/banner.jpg");
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 5vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.albumImg {
+  width: 80%;
+}
+
+.albumTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
