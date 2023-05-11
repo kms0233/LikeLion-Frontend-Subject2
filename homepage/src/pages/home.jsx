@@ -1,7 +1,6 @@
 import { Layout } from "../components/Layout/layout";
 import Banner from "../assets/banner.jpg";
 import React from "react";
-/*import "src/App.css";*/
 
 function Home() {
   return (

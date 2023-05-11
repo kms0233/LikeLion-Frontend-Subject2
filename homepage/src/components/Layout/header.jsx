@@ -2,10 +2,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 function Header() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          멋사Shop
+          <b>멋사Shop</b>
         </a>
         <button
           class="navbar-toggler"
@@ -18,6 +18,15 @@ function Header() {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/albums">
+                Albums
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
