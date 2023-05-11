@@ -1,0 +1,24 @@
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './home';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Album from './components/Album';
+
+function App() {
+  return (
+    <>
+      <NavBar />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}  />
+        <Route path="/albums" element={<Album/>} />
+      </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
