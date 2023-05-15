@@ -3,6 +3,7 @@ import Home from "./Home";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Albums from "./Albums";
+import Detail from "./Detail";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/albums" element={<Albums />} />
+          <Route path="/detail/:id" element={<Detail />} />
         </Routes>
         <Footer />
       </BrowserRouter>
