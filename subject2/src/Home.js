@@ -1,12 +1,10 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-
+import './App.css'
 
 function Home() {
-     
+    return (          
+        <div className="main-bg"></div>                
+      );     
 }
 
 export default Home;
