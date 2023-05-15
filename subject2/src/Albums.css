@@ -1,7 +1,27 @@
+.album-row {
+  flex-wrap: nowrap;
+}
 .albums {
   max-width: 80%;
 }
+.albums-img {
+  width: 20vw;
+}
+.album-img {
+  width: 30vw;
+}
 .album-title {
-  font-size: 25px;
+  font-size: 1.8vw;
   font-weight: 600;
+}
+.album-subtitle {
+  font-size: 1vw;
+}
+.order-btn {
+  padding: 0.5vw 1vw;
+  background-color: rgb(46, 94, 252);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1vw;
 }

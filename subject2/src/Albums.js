@@ -1,33 +1,36 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { Lilac, LovePoem, Palette } from './img/index'
+import { Lilac, LovePoem, Palette } from './image'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Albums.css'
+import { Link } from "react-router-dom";
 
 function Albums() {
+  const albumList = [
+    { "id": "LovePoem", "title": LovePoem, "subtitle": "The 5th Mini Album" },
+    { "id": "Lilac", "title": Lilac, "subtitle": "The 5th Album" },
+    { "id": "Palette", "title": Palette, "subtitle": "The 4th Album" },
+  ];
   return (
     <Container className="albums p-5">
-      <Row>
-        <Col className="m-3">
-          <Row>
-            <img className="col-4" style={{ width: 500 }} src={LovePoem} alt='LovePoem' id='LovePoem' />
-            <p className="album-title">Love poem</p>
-            <p className="album-subtitle">The 5th Mini Album</p>
-          </Row>
-        </Col>
-        <Col className="m-3">
-          <Row>
-            <img className="col-4" style={{ width: 500 }} src={Lilac} alt='Lilac' />
-            <p className="album-title">LILAC</p>
-            <p className="album-subtitle">The 5th Album</p>
-          </Row>
-        </Col>
-        <Col className="m-3">
-          <Row>
-            <img className="col-4" style={{ width: 500 }} src={Palette} alt='Palette' />
-            <p className="album-title">Palette</p>
-            <p className="album-subtitle">The 4th Album</p>
-          </Row>
-        </Col>
+      <Row className="album-row">
+        {albumList.map(album =>
+          <Col className="m-3" key={album.id}>
+            <Row>
+              <div>
+                <Link to={`/detail/${album.id}`}
+                  state={{
+                    subtitle: album.subtitle,
+                    img: album.title
+                  }}
+                >
+                  <img className="albums-img" src={album.title} alt={album.id} />
+                </Link>
+                <p className="album-title">{album.id}</p>
+                <p className="album-subtitle">{album.subtitle}</p>
+              </div>
+            </Row>
+          </Col>)
+        }
       </Row>
     </Container>
   );
