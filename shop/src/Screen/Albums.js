@@ -1,29 +1,29 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import img1 from '../public/img/LovePoem.jpg';
-import img2 from '../public/img/Lilac.jpg';
-import img3 from '../public/img/Palette.jpg';
+import { Link, useNavigate } from 'react-router-dom';
+import { data } from '../public/data';
 import '../public/App.css';
 
 export const Albums = () => {
+	const navigation = useNavigate();
+
+	const handleOnClick = ( URI, item ) =>
+		navigation(URI, { state: item });
+
   return (
 	<Container>
 		<Row className="mt-5">
-			<Col>
-				<img src={img1} className="albumImgs"/>
-				<h5 className="mt-2">Love poem</h5>
-				<p className="albumCaption">The 5th Mini Album</p>
-			</Col>
-			<Col>
-				<img src={img2} className="albumImgs"/>
-				<h5 className="mt-2">LILAC</h5>
-				<p className="albumCaption">The 5th Album</p>
-			</Col>
-			<Col>
-				<img src={img3} className="albumImgs"/>
-				<h5 className="mt-2">Palette</h5>
-				<p className="albumCaption">The 4th Album</p>
-			</Col>
+			{
+				data.map((item) => {
+					return (
+						<Col key={item.title} onClick={() => { handleOnClick(`/detail/${item.title}`, item)}}>
+								<img src={require(`../public/img/${item.title}.jpg`)} className="albumImgs"/>
+								<h5 className="mt-2">{item.title}</h5>
+								<p className="albumCaption">{item.caption}</p>
+						</Col>
+					);
+				}
+			)}
 		</Row>
 	</Container>
   )
