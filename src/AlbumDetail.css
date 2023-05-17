@@ -1,0 +1,22 @@
+h2 {
+    margin-left: 200px; /* 위아래 여백 */
+    font-weight: bold; /* 굵은 글씨 */
+}
+h4 {
+    margin-left: 200px; 
+    margin-top: 10px;
+    font-weight: 550;
+}
+h6 {
+    margin-left: 200px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+h5 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
