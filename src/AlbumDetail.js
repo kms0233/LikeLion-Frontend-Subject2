@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 import "./AlbumDetail.css";
 
-
 function AlbumDetail(props) {
   const { title } = useParams();
   const [showSaleAlert, setShowSaleAlert] = useState(true);
