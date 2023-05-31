@@ -2,8 +2,6 @@ import data from './data.js';
 import { Route, Routes, Link } from "react-router-dom";
 import React, { useState } from "react";
 
-
-
 function Albums(props) {
   const [album, setData] = useState(data);
   return (
